@@ -89,6 +89,7 @@ var finances = [
 
 
 // 1. The total number of months included in the dataset.
+var financesMonth = 86;
 console.log(finances.length)
 
 // 2. The net total amount of Profit/Losses over the entire period.
@@ -141,3 +142,11 @@ for (let i = 0; i < finances.length - 1; i++) {
 };
 console.log(finances[indexOfGreatestProfit][0]);
 console.log(greatestDecreaseProfits);
+
+alert(`Financial Analysis
+Total Month: ${financesMonth}
+Net Total Amount: ${netTotalAmount}
+Average: ${Average}
+Greatest Increase in Profit: ${finances[indexOfGreatestProfit][0], greatestIncreaseProfits}
+Greatest Decrease in Profit: ${finances[indexOfGreatestProfit][0], greatestDecreaseProfits}`
+);
